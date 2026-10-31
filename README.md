@@ -165,7 +165,6 @@ $env:ETL_EMAIL_PASSWORD="your_gmail_app_password"
 $env:ETL_EMAIL_RECEIVER="receiver_email@gmail.com"
 ```
 
-Use a Gmail App Password instead of your regular Gmail password. Never upload credentials to GitHub.
 
 ## Key Learning Outcomes
 
