@@ -1,0 +1,190 @@
+2026-10-31 06:22:20,285 | INFO | ETL Scheduler started.
+2026-10-31 06:22:20,285 | INFO | =======================================================
+2026-10-31 06:22:20,285 | INFO | ETL PIPELINE STARTED
+2026-10-31 06:22:20,285 | INFO | =======================================================
+2026-10-31 06:22:20,285 | INFO | Starting script: scraper.py
+2026-10-31 06:23:46,996 | INFO | Output from scraper.py:
+
+Scraping page 1...
+Extracted 20 books from page 1
+
+Scraping page 2...
+Extracted 20 books from page 2
+
+Scraping page 3...
+Extracted 20 books from page 3
+
+Scraping page 4...
+Extracted 20 books from page 4
+
+Scraping page 5...
+Extracted 20 books from page 5
+
+Scraping page 6...
+Extracted 20 books from page 6
+
+Scraping page 7...
+Extracted 20 books from page 7
+
+Scraping page 8...
+Extracted 20 books from page 8
+
+Scraping page 9...
+Extracted 20 books from page 9
+
+Scraping page 10...
+Extracted 20 books from page 10
+
+Scraping page 11...
+Extracted 20 books from page 11
+
+Scraping page 12...
+Extracted 20 books from page 12
+
+Scraping page 13...
+Extracted 20 books from page 13
+
+Scraping page 14...
+Extracted 20 books from page 14
+
+Scraping page 15...
+Extracted 20 books from page 15
+
+Scraping page 16...
+Extracted 20 books from page 16
+
+Scraping page 17...
+Extracted 20 books from page 17
+
+Scraping page 18...
+Extracted 20 books from page 18
+
+Scraping page 19...
+Extracted 20 books from page 19
+
+Scraping page 20...
+Extracted 20 books from page 20
+
+Scraping page 21...
+Extracted 20 books from page 21
+
+Scraping page 22...
+Extracted 20 books from page 22
+
+Scraping page 23...
+Extracted 20 books from page 23
+
+Scraping page 24...
+Extracted 20 books from page 24
+
+Scraping page 25...
+Extracted 20 books from page 25
+
+Scraping page 26...
+Extracted 20 books from page 26
+
+Scraping page 27...
+Extracted 20 books from page 27
+
+Scraping page 28...
+Extracted 20 books from page 28
+
+Scraping page 29...
+Extracted 20 books from page 29
+
+Scraping page 30...
+Extracted 20 books from page 30
+
+Scraping page 31...
+Extracted 20 books from page 31
+
+Scraping page 32...
+Extracted 20 books from page 32
+
+Scraping page 33...
+Extracted 20 books from page 33
+
+Scraping page 34...
+Extracted 20 books from page 34
+
+Scraping page 35...
+Extracted 20 books from page 35
+
+Scraping page 36...
+Extracted 20 books from page 36
+
+Scraping page 37...
+Extracted 20 books from page 37
+
+Scraping page 38...
+Extracted 20 books from page 38
+
+Scraping page 39...
+Extracted 20 books from page 39
+
+Scraping page 40...
+Extracted 20 books from page 40
+
+Scraping page 41...
+Extracted 20 books from page 41
+
+Scraping page 42...
+Extracted 20 books from page 42
+
+Scraping page 43...
+Extracted 20 books from page 43
+
+Scraping page 44...
+Extracted 20 books from page 44
+
+Scraping page 45...
+Extracted 20 books from page 45
+
+Scraping page 46...
+Extracted 20 books from page 46
+
+Scraping page 47...
+Extracted 20 books from page 47
+
+Scraping page 48...
+Extracted 20 books from page 48
+
+Scraping page 49...
+Extracted 20 books from page 49
+
+Scraping page 50...
+Extracted 20 books from page 50
+
+========== SCRAPING SUMMARY ==========
+Total records extracted: 1000
+CSV file saved successfully!
+JSON file saved successfully!
+
+2026-10-31 06:23:47,013 | WARNING | Errors/output from scraper.py:
+Traceback (most recent call last):
+  File "C:\Users\LORDS\Desktop\Datheon_Data_Engineering_Internship\Task-1-Web-Scraper\scraper.py", line 194, in <module>
+    <td>{html.escape(book['title'])}</td>
+         ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'escape'
+
+2026-10-31 06:23:47,013 | ERROR | ETL PIPELINE FAILED: scraper.py failed. Check pipeline.log for details.
+Traceback (most recent call last):
+  File "C:\Users\LORDS\Desktop\Datheon_Data_Engineering_Internship\Task-4-Automated-ETL-Pipeline\pipeline.py", line 148, in run_pipeline
+    run_script(
+    ~~~~~~~~~~^
+        TASK1 / "scraper.py",
+        ^^^^^^^^^^^^^^^^^^^^^
+        TASK1
+        ^^^^^
+    )
+    ^
+  File "C:\Users\LORDS\Desktop\Datheon_Data_Engineering_Internship\Task-4-Automated-ETL-Pipeline\pipeline.py", line 115, in run_script
+    raise RuntimeError(
+        f"{script_path.name} failed. Check pipeline.log for details."
+    )
+RuntimeError: scraper.py failed. Check pipeline.log for details.
+2026-10-31 06:23:47,015 | INFO | Pipeline status: FAILED
+2026-10-31 06:23:47,015 | INFO | Execution duration: 86.73 seconds
+2026-10-31 06:23:47,015 | INFO | ETL PIPELINE FINISHED
+2026-10-31 06:23:47,015 | WARNING | Email not configured. Skipping email notification.
+2026-10-31 06:27:53,633 | INFO | ETL Scheduler stopped by user.

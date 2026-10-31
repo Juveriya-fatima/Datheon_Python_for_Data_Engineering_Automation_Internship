@@ -1,0 +1,38 @@
+AUTOMATED DATA CLEANING AND VALIDATION REPORT
+==================================================
+Original records: 1000
+Missing values before cleaning: 0
+Duplicate records before cleaning: 0
+Duplicate records removed: 0
+Records removed due to missing title or URL: 0
+Currency values normalized to numeric GBP prices.
+Ratings converted into numeric values from 1 to 5.
+Unknown ratings represented as 0.
+Date normalization skipped: no date column exists in the source dataset.
+Required columns checked successfully.
+Invalid prices detected: 0
+Empty titles detected: 0
+Invalid URLs detected: 0
+
+==================================================
+FINAL DATA QUALITY SUMMARY
+==================================================
+Original records: 1000
+Final clean records: 1000
+Records removed: 0
+Missing values after cleaning: 0
+Duplicate records after cleaning: 0
+
+FINAL SCHEMA:
+title               str
+price           float64
+availability        str
+rating            int64
+product_url         str
+currency            str
+dtype: object
+
+FINAL VALIDATION STATUS:
+PASSED - No missing values or duplicate records.
+
+Clean dataset saved as: clean_products.csv
